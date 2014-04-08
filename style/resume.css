@@ -1,0 +1,153 @@
+/*
+Plugin: jQuery Parallax
+Version 1.1.3
+Author: Ian Lunn
+Twitter: @IanLunn
+Author URL: http://www.ianlunn.co.uk/
+Plugin URL: http://www.ianlunn.co.uk/plugins/jquery-parallax/
+
+License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike). Please attribute work to Ian Lunn simply by leaving these comments in the source code or if you'd prefer, place a link on your website to http://www.ianlunn.co.uk/.
+*/
+
+@charset"utf-8";
+
+/* CSS Document */
+
+body {
+    margin: 0;
+    min-width: 100%;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+.float-left {
+    float: left;
+    margin: 0 0 0 20px;
+}
+
+.float-right {
+    float: right;
+    margin: 0 20px 0 0;
+}
+
+.center {
+    font-size: 2.5em;
+    padding: 80px 0 0 0;
+    text-align: center;
+}
+
+#nav {
+    list-style: none;
+    position: fixed;
+    right: 20px;
+    z-index: 500; /* vertical nav buttons must be on top of everything */
+}
+
+#nav li {
+    margin: 0 0 15px 0;
+}
+
+#header,
+#intro,
+#second {
+    width: 100%;
+}
+
+#intro {
+    background: url(../img/vt-football.jpg) 50% 0 no-repeat fixed;
+    color: white;
+    height: 700px;
+    margin: 0 auto;
+}
+
+#intro .story {
+    margin-top:10px;  
+}
+
+#second {
+    background: url(../img/desk.jpg) 50% 0 no-repeat fixed;
+    color: white;
+    height: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+}
+
+#second .story {
+    color: black;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#third {
+    background: url(../img/sky.jpg) 50% 0 no-repeat fixed;
+    color: white;
+    height: 800px;
+    padding: 100px 0 0 0;
+}
+
+#third .bg {
+    background: url(../img/hot-air-balloon.png) 50% 0 no-repeat fixed;
+    height: 800px;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    float: right;
+    margin-top: -100px;
+    background-position: 75% !important;
+}
+
+#third .story {
+    color: black;
+    margin-top: 150px;
+    z-index: 200;
+    position: absolute;
+}
+
+#fifth {
+    background: url(../img/greyBG.jpg) 50% 0 no-repeat fixed;
+    height: 500px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+}
+
+#fifth .story{
+    color: white;  
+    margin: auto;
+    margin-top: 50px;
+}
+
+#sixth {
+    background: url(../img/telephone-booth.jpg) 50% 0 no-repeat fixed;
+    height: 600px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
+
+.story {
+    min-width: 500px;
+    max-width: 1000px;
+    overflow: auto;
+    width: auto;
+}
+
+.story .float-right {
+    margin-right: 50px;
+}
+
+.story .float-left {
+    margin-left: 50px;   
+}
+
+.story .float-center {
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.social-media-icons {
+    margin-top: 450px;
+}
